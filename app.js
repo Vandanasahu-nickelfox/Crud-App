@@ -12,7 +12,7 @@
   
   // Register the routes
   app.use('/api', authRoutes); // Register auth routes
-  app.use('/api/v1', todoRoutes); // Register Todo CRUD routes
+  app.use('/api/v1', todoRoutes); // Register Todo CRUD routes (/v1 remove confusion )
   
   // Sync the database and start the server
   sequelize.sync({ logging: console.log }) // Enable Sequelize query logging
